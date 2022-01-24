@@ -1,0 +1,177 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background-color: #9488ef;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+header{
+   
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-cabecalho{
+    font-size: 1.225rem;
+    place-self: center;
+}
+
+.tenor-gif-embed {
+    display: flex;
+    align-items: center;
+    height: 130px;
+    width: 130px;
+    margin-top: 20px;
+    
+}
+
+.principal{
+    
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes{
+    align-self: center;
+    justify-self: center;
+    padding: 0.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: .3rem;
+    
+}
+input{
+    place-self: center;
+}
+.selecao{
+    cursor: pointer;
+    grid-column: span 2;
+    font-size: 1.255;
+   
+}
+.passinho{
+    width: 60%;
+    grid-column: span 2;
+    
+}
+.interagir{
+    align-self: center;
+    justify-self: center;
+    margin-top: auto;
+}
+.botao--interagir{
+    width: 7rem;
+    height: 2rem;
+    place-self: center;
+}
+.botao--delete{
+    width: 7rem;
+    height: 2rem;
+    place-self: center;
+}
+
+form{
+    
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 1.2rem;
+}
+
+
+textarea {
+    padding: 1.255rem;
+    height: 20vh;
+    width: 70%;
+    
+    resize: none;
+
+    
+    font-family: inherit;
+    color: rgb(0, 0, 0);
+
+    border: solid .3rem;
+    border-radius: 1rem;
+    place-self: center;
+    background-color: #f0f7f5;
+}
+
+button{
+    width: 7rem;
+    height: 2.3rem;
+}
+
+footer{
+
+   
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 0.6rem;
+    display: grid;  
+}
+.rodape { 
+    
+   place-self: center;
+    width: 50%;
+}
+footer h2{
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+ .transparente{
+    display: none;
+}
+
+@media screen and (min-width: 940px) {
+
+    .titulo-cabecalho{
+        margin-top: 1.222rem;
+        font-size: 3rem;
+    }
+   
+   .principal{
+       margin-top: 3rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 1fr;
+   }
+   .opcoes{
+       grid-row: 1;
+       grid-column: span 2;
+   }
+   .interagir{
+       grid-column: 1;
+       grid-column: span 2;
+       grid-row: 2;  
+       gap: 3rem;  
+   }
+   .opcoes{
+       gap: 0.8rem;
+       margin-top: 1rem;
+   }
+   form{
+    grid-template-columns: 2fr 2fr;
+   }
+
+   footer{
+       margin-top: auto;
+   }
+
+
+}

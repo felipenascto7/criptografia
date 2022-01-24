@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Criptografia | Resilia</title>
+</head>
+
+<body>
+    <header class="cabecalho container">
+        <h3 class="titulo-cabecalho">Passinho do Romano</h3>
+        <div class="tenor-gif-embed" data-postid="7474905" data-width="100%"></div> 
+        <script src="https://tenor.com/embed.js"></script>    
+    </header>
+    <main class="container principal">
+        <section class="container opcoes">            
+            <select name="selecionar" class="selecao" onchange="abrir()" id="">
+                <option value="none" disable selected>Selecione o codificador</option>
+                <option value="cifra"  >Cifra de César</option>
+                <option value="base64">Base64</option>
+            </select>
+            <input type="number" min="0" max="25" class="passinho transparente" placeholder="Digite a chave">
+            <input type="radio" checked name="opcao" onchange="mudar()">
+            <label for="opcao">Codificar</label>
+            <input type="radio" name="opcao" onchange="mudar()">
+            <label for="opcao">Decodificar</label>
+        </section>
+
+        <section class="container interagir">
+            <form action="#">
+                <textarea id='input' class="teste1" rows=10 cols="50" spellcheck="false" placeholder="Digite Aqui"></textarea>               
+                <textarea id='output' class="resposta" rows=10 cols="50" spellcheck="false" disabled></textarea>
+                <input type="submit" value="Codificar" class="botao--interagir"  onclick="acao()">
+                <input type="reset" value="Deletar"   class="botao--delete"> 
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
